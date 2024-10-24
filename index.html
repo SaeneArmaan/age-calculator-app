@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main class="mainWrapper">
+      <section class="contentWrapper">
+        <div class="ageWrapper">
+          <div>
+            <label for="day">DAY</label>
+            <input type="number" name="day" id="day" required min="0" />
+            <p class="alertDay"></p>
+          </div>
+          <div>
+            <label for="month">MONTH</label>
+            <input type="number" name="month" id="month" required min="0" />
+            <p class="alertMonth"></p>
+          </div>
+          <div>
+            <label for="year">YEAR</label>
+            <input type="number" name="year" id="year" required min="0" />
+            <p class="alertYear"></p>
+          </div>
+        </div>
+
+        <div class="divider">
+          <svg width="100%" height="20" class="dividerLine">
+            <line
+              x1="0"
+              y1="50%"
+              x2="100%"
+              y2="50%"
+              stroke="hsl(0, 0%, 86%)"
+              stroke-width="1"
+            />
+          </svg>
+          <div class="iconWrapper">
+            <img
+              src="./assets/images/icon-arrow.svg"
+              alt="submitButton"
+              class="submitBtn"
+            />
+          </div>
+
+          <div class="iconWrapper hidden">
+            <img
+              src="./assets/images/x-lg.svg"
+              alt="resetButton"
+              class="resetBtn"
+            />
+          </div>
+        </div>
+
+        <div class="resultWrapper">
+          <h1><span class="yearDis">--</span> years</h1>
+          <h1><span class="monthDis">--</span> months</h1>
+          <h1><span class="dayDis">--</span> days</h1>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
