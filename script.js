@@ -112,7 +112,7 @@ function validateInputs(inputs) {
     }
   }
 
-  return updatedValues;
+  return status.every((val) => val === true) ? updatedValues : null;
 }
 
 const calculateAge = ({ day, month, year }) => {
